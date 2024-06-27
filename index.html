@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Compañera Más Linda <span style="color: red;">&#10084;&#10084;&#10084;</span></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #image-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Compañera Más Linda <span style="color: red;">&#10084;&#10084;&#10084;</span></h1>
+    <button onclick="mostrarFoto()">Mostrar Foto</button>
+    <div id="image-container">
+        <img id="imagen" src="" alt="Foto de la compañera">
+    </div>
+
+    <script>
+        function mostrarFoto() {
+            var imagen = document.getElementById('imagen');
+            // Coloca la dirección de la imagen local aquí
+            imagen.src = "http://localhost/mi-imagen.jpg.jpeg";
+        }
+    </script>
+</body>
+</html>
